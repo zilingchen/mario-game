@@ -130,6 +130,16 @@
             /* background: salmon; */
         }
 
+        #btn-start {
+            width: 150px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(210, 180, 140, 0.8);
+        }
+        #btn-start:hover {
+            background: rgba(234, 152, 45, 1);
+            cursor: pointer;
+        }
         .holes {
             width: 300px;
             height: 120px;
@@ -230,11 +240,12 @@
                 X<span id="text-score">0</span>
             </div>
             <div id="middle">
-                <p>RECORD</p>
+                <input type="button" value="Start" id="btn-start" style="background-image: url(.);">
+                <!-- <p>RECORD</p>
                 <p>PLAYER</p>
                 <p id="highscore-player">-</p>
                 <p>SCORE</p>
-                <p id="highscore-score">-</p>
+                <p id="highscore-score">-</p> -->
             </div>
             <div id="right">
                 <p>TIME</p>
@@ -252,7 +263,6 @@
                 <td class="holes" id="hole8"><img src="./images/pipe.png"></td>
                 <td class="holes" id="hole9"><img src="./images/pipe.png"></td>
             </tr>
-
             <tr>
                 <td class="holes" id="hole4"><img src="./images/pipe.png"></td>
                 <td class="holes" id="hole5"><img src="./images/pipe.png"></td>
@@ -264,10 +274,6 @@
                 <td class="holes" id="hole3"><img src="./images/pipe.png"></td>
             </tr>
         </table>
-
-        <!-- <input type="button" value="Start" id="btn-start" style="background-image: url(.);"> -->
-        <br>
-       
     </div>
     <script>
         const btnStart = document.getElementById('btn-start')

@@ -101,7 +101,7 @@
             left: 50%;
             top: 56%;
             transform: translate(-50%, -50%);
-            cursor: url(./images/mario.png) 25 50, auto;
+            cursor: url(./images/cursor_black.png) 50  50, auto;
         }
 
 
@@ -142,7 +142,7 @@
         }
         .holes {
             width: 300px;
-            height: 120px;
+            height: 165px;
             background-position: bottom;
             position: relative;
 
@@ -154,7 +154,7 @@
         }
 
         .red {
-            background-image: url(./images/flower.png);
+            background-image: url(./images/flowerred.png);
             background-repeat: no-repeat;
             background-position: 10px;
             animation: jump 1s linear forwards;
@@ -162,30 +162,28 @@
 
         @keyframes jump {
             from {
-                background-position: 20px 50px;
+                background-position: 20px 80px;
 
             }
 
             to {
-                background-position: 20px 10px;
+                background-position: 20px 50px;
             }
         }
 
         #brick1 {
             position: absolute;
-            left: 50%;
-            top: 49%;
-            transform: translate(-50%, -50%);
+            left: 23%;
+            top: 42%;
+            /* transform: translate(-50%, -50%); */
             z-index: 1;
-
         }
 
         #brick2 {
-
             position: absolute;
-            left: 50%;
-            top: 65%;
-            transform: translate(-50%, -50%);
+            left: 23%;
+            top: 66%;
+            /* transform: translateX(-50%); */
             z-index: 1;
         }
 
@@ -255,8 +253,8 @@
         <div id="cloud1"><img src="./images/cloud.png"></div>
         <div id="cloud2"><img src="./images/cloud.png"></div>
         <div id="cloud3"><img src="./images/cloud.png"></div>
-        <div id="brick1"><img src="./images/bottom.png" width="300px"></div>
-        <div id="brick2"><img src="./images/bottom.png" width="300px"></div>
+        <div id="brick1"><img src="./images/bottom.png"></div>
+        <div id="brick2"><img src="./images/bottom.png"></div>
         <table id="game" cellspacing="20px">
             <tr>
                 <td class="holes" id="hole7"><img src="./images/pipe.png"></td>
